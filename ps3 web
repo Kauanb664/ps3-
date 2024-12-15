@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emulador PS3 Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #gameCanvas {
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .controls button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Emulador PS3 Online</h1>
+    <canvas id="gameCanvas" width="1280" height="720"></canvas>
+    
+    <div class="controls">
+        <button id="loadRomButton">Carregar Jogo</button>
+        <button id="startButton">Iniciar Jogo</button>
+    </div>
+
+    <script src="emuladorPS3.js"></script> <!-- Arquivo JavaScript para a emulação -->
+</body>
+</html>
